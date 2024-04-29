@@ -7,6 +7,21 @@
         display: grid;
         place-content: center;
     }
+    .header {
+        display: grid;
+        place-content: center;
+    }
+
+    .logo {
+        display: grid;
+        place-content: center;
+    }
+
+    .PTSubTitle {
+        color: yellow;
+        display: grid; 
+        place-content: center;
+    }
 
     .cards_container {
         display: flex;
