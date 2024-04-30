@@ -45,8 +45,7 @@
 
     .planet_card:hover {
         transition-duration: 0.5s;
-        height: 16rem;
-        width: 16rem;
+        scale: 1.1;
     }
 
     .terminids {
