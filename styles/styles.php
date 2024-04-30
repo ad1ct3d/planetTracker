@@ -32,6 +32,8 @@
     }
 
     .cards_container {
+        margin-right: 5%;
+        margin-left: 5%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;

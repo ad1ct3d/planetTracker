@@ -30,20 +30,14 @@ function get_data(string $url): array {
 
 ## player count
 
-function player_counter($data)
-{
-    $total_players=0;
-    for ($i = 0; $i < count($data); $i++) {
-
-        $total_players += count($data[$i]["players"]);
-
-    ?>
-    <h3>Helldivers activos: <?= $total_players;?></h3>
-    <?php
-}
+function sum_total_players(array $data): int {
+    $total_players = 0;
+    foreach ($data as $planet) {
+        $total_players += count($planet["players"]);
+    }
+    return $total_players;
 }
 
-/* $total_players = player_counter($data); */
 
 
 
@@ -51,8 +45,6 @@ function player_counter($data)
 
 function card_generator($data)
 {for ($i = 0; $i < (count($data)); $i++) {
-
     render_template('cards', $data[$i]);
-
 }}
 ?>

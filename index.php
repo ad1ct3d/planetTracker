@@ -5,6 +5,7 @@ require_once 'functions.php';
 
 /* API */
 $data = get_data(API_URL);
+
 ?>
 
 
@@ -13,6 +14,14 @@ $data = get_data(API_URL);
 
 <!-- HTML -->
 
-<?php render_template('head')?>  <!-- HEAD -->
 
-<?php render_template('main', $data); ?><!-- BODY -->
+  <!-- HEAD -->
+<?php render_template('head')?>
+
+<!-- BODY -->
+<?php render_template('main', $data); ?>
+
+<!-- CARDS CONTAINER -->
+<div class="cards_container"> 
+<?= $cards = card_generator($data); ?>
+</div>
