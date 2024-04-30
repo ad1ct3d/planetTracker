@@ -41,21 +41,41 @@
     margin: 1rem;
     display: grid;
     place-content: center;
+    border: 2px solid white;
+    /* transition */
+    transition: scale 0.5s,
+                box-shadow 0.5s,
+                -webkit-box-shadow 0.5s,
+                -moz-box-shadow 0.5s;
     }
 
     .planet_card:hover {
-        transition-duration: 0.5s;
         scale: 1.1;
+        -webkit-box-shadow:0px 0px 28px 0px rgba(255,46,46,0.9);
+        -moz-box-shadow: 0px 0px 28px 0px rgba(255,46,46,0.9);
+        box-shadow: 0px 0px 28px 0px rgba(255,46,46,0.9);
+
     }
 
     .terminids {
-        background-color: yellow;
+        background-color: hsla(54, 69%, 32%, 1);
         justify-content: flex-start;
+        border-color: yellow;
+
+
+    }
+
+    .terminids:hover {
+        -webkit-box-shadow:0px 0px 28px 0px rgba(248,255,46,0.9);
+        -moz-box-shadow: 0px 0px 28px 0px rgba(248,255,46,0.9);
+        box-shadow: 0px 0px 28px 0px rgba(248,255,46,0.9);
+
     }
 
     .automatons {
-        background-color: red;
+        background-color: hsla(2, 72%, 31%, 1);
         justify-content: flex-start;
+        border-color: red;
     }
 
     
