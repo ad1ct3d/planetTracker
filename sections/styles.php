@@ -7,6 +7,14 @@
         display: grid;
         place-content: center;
     }
+
+    main {
+        background-color: darkblue ;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        background-color: #36455c;
+    }
+
     .header {
         display: grid;
         place-content: center;
@@ -75,6 +83,7 @@
         background-color: hsla(2, 72%, 31%, 1);
         justify-content: flex-start;
         border-color: red;
+        order: 1;
     }
 
     

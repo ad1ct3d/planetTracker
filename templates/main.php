@@ -9,7 +9,8 @@
 
     <section>
         <h1>Planetas activos: <?= count($data);?> </h1>
-        <p>Helldivers activos: <?= $total_players;?></p>
+
+        
     </section>
 
 
