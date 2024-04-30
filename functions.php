@@ -18,6 +18,14 @@ function get_data(string $url):array {
     return $data;
 };
 
+## player count
+
+function player_counter($data)
+{for ($i = 0; $i < (count($data)); $i++) {
+
+    $total_players = array_reduce($data[$i]["players"], "sum");
+    return $total_players;
+}}
 
 
 
@@ -37,6 +45,7 @@ function card_generator($data)
             <p>dominado por: <?= $data[$i]["faction"];?></p>
             <p>Helldivers activos: <?= $data[$i]["players"];?></p>
             <p><?= $data[$i]["percentage"];?>%</p>
+            <progres value="<?= $data[$i]["percentage"];?>"  max="100"></progress>
 
         </div>
     <!-- CLOSE HTML -->
@@ -45,5 +54,3 @@ function card_generator($data)
 <?php
 }}
 ?>
-
-
