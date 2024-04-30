@@ -69,7 +69,6 @@
         -webkit-box-shadow:0px 0px 28px 0px rgba(248,255,46,0.9);
         -moz-box-shadow: 0px 0px 28px 0px rgba(248,255,46,0.9);
         box-shadow: 0px 0px 28px 0px rgba(248,255,46,0.9);
-
     }
 
     .automatons {
