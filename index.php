@@ -9,7 +9,7 @@ $data = get_data(API_URL);
 
 
 <!-- styles -->
-<?php require_once 'sections/styles.php';?>
+<?php require_once 'styles/styles.php';?>
 
 <!-- HTML -->
 
